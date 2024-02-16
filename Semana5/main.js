@@ -6,9 +6,12 @@ A execução do algoritmo deve ser contínua e o número 0 ou ‘sair’
 é a flag para parar a execução*/
 
 
-const consultaProduto = prompt("Digite o Nome ou Código do Produto");
+const consultaProduto = prompt("Digite o nome ou código do alimento ('0'ou 'sair' para encerrar Programa):");
 
-switch (consultaProduto) {
+let continua = false;
+
+while (continua){
+switch (consultaProduto.toLocaleUpperCase()) {
     case 'Banana':
     case '01':
         alert("O Valor da Banana é R$ 5,99");
@@ -21,6 +24,11 @@ switch (consultaProduto) {
     case '03':
         alert("O Valor da Abacaxi é R$ 6,99");
         break;
+        case 'sair':
+        case '0':
+        alert("Para Encerrar o Programa");
+        break;
     default:
         alert("Nome ou Código do Produto é Inválido");
+}
 }
