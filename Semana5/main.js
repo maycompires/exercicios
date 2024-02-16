@@ -6,10 +6,9 @@ A execução do algoritmo deve ser contínua e o número 0 ou ‘sair’
 é a flag para parar a execução*/
 
 
-let nomeProduto = prompt("Digite o Nome do Produto");
-let codigoProduto = prompt("Digite o Código do Produto");
+const consultaProduto = prompt("Digite o Nome ou Código do Produto");
 
-switch (nomeProduto) {
+switch (consultaProduto) {
     case 'Banana':
     case '01':
         console.log("O Valor da Banana é R$ 5,99");
