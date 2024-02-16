@@ -27,7 +27,7 @@ while (continua) {
         case 'sair':
         case '0':
             alert("Programa Encerrado");
-            continua = false
+            continua = !false;
             break;
         default:
             alert("Nome ou Código do Produto é Inválido");
