@@ -5,31 +5,32 @@ function imprimirResultado() {
     let quartaNota = parseFloat(document.getElementById("nota4").value);
     
     let mediaFinal = (primeiraNota + segundaNota + terceiraNota + quartaNota) / 4;
-
+    
+    console.log(`A sua Média Final foi ${mediaFinal.toFixed(2)}`)
+    
     switch (Math.floor(mediaFinal)) {
         case 10:
         case 9:
-            console.log('Quadro de Honra');
+            console.log('Você entrou para o Quadro de Honra');
             break;
         case 8:
         case 7:
-            console.log('Aprovado');
+            console.log('Você foi Aprovado');
             break;
         case 6:
         case 5:
-            console.log('Recuperação');
+            console.log('Você ficou em Recuperação');
             break;
         case 4:
         case 3:
         case 2:
         case 1:
-            console.log('Reprovado');
+            console.log('Infelizmente Você foi Reprovado');
             break;
         default:
             console.log('Nota Inválida');
     }
-    return mediaFinal;
 }
 
 imprimirResultado()
-console.log(`A sua Média Final foi ${mediaFinal}`)
+
