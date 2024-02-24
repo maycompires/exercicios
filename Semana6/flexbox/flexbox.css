@@ -11,10 +11,17 @@ h1{
     color: white;
     height: 100px;
     line-height: 100px;
+    text-align: center;
 }
 
 article{
     padding: 10px;
     margin: 10px;
     background: aquamarine;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
