@@ -1,11 +1,52 @@
-header{
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main{
+body{
+    font-family: "Open Sans", sans-serif;
+}
 
+.menu-navegacao ul{
+    height: 100px;
+    background-color: beige;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #673FCD;
+}
+
+.container-principal{
+    background-color: aqua;
+    margin-top: 150px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.container-principal h1{
+    color: #673FCD;
+}
+
+.container-principal h2{
+    color:black;
+}
+
+.container-principal img{
+    width: 500px;
+    height: 500px;
+    padding: auto;
+    
+}
+
+.secao-sobre{
+    text-align: center;
+    
 }
 
 footer{
-    
+    text-align: center;
+    margin-top: 200px;
 }
