@@ -46,13 +46,20 @@ main{
 
 main h1{
     font-size: 54px;
-    color: #7145E0;
+    color: #7043df;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
 
-.content-right{
-    width: 30%
+main .btn-contato{
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: #1AD920;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow:5px 5px 5px #7043df;
 }
 
 section {
