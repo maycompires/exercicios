@@ -8,43 +8,90 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
-.menu-navegacao ul{
+header{
     height: 100px;
-    background-color: beige;
-    list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    color: #673FCD;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,69,224,1) 45%, rgba(162,0,255,1) 100%);
 }
 
-.container-principal{
-    background-color: aqua;
-    margin-top: 150px 100px;
+ul{
     display: flex;
-    flex-direction: column;
-    text-align: right;
+    list-style-type: none;
 }
 
-.container-principal h1{
-    color: #673FCD;
+ul li a{
+    padding: 0 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
-.container-principal h2{
-    color:black;
+main{
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.container-principal img{
-    width: 500px;
-    height: 500px;
-    padding: auto;
-    
+.img-perfil{
+    max-width: 600px;
+    height: auto;
 }
 
-.secao-sobre{
+.content-left{
+    width: 30%;
+}
+
+main h1{
+    font-size: 54px;
+    color: #7145E0;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.content-right{
+    width: 30%
+}
+
+section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     text-align: center;
-    
-}
+  }
+  
+section .first-card{
+    max-width: 300px;
+    max-height: 600px;
+    padding: 60px 30px 60px 30px;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px #0A1D56;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,69,224,1) 45%, rgba(162,0,255,1) 100%);
+    color: white;
+  }
+  
+section .second-card {
+    max-width: 300px;
+    max-height: 600px;
+    padding: 60px 30px 60px 30px;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px #0A1D56;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,69,224,1) 45%, rgba(162,0,255,1) 100%);
+    color: white;
+  }
+  
+section .third-card {
+    max-width: 300px;
+    max-height: 600px;
+    padding: 60px 30px 60px 30px;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px #0A1D56;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,69,224,1) 45%, rgba(162,0,255,1) 100%);
+    color: white;
+  }
 
 footer{
     text-align: center;
