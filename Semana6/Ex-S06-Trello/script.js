@@ -1,3 +1,3 @@
 function exibirMensagem() {
-    alert("Aqui Você Pode entrar em Contato Comigo!");
+    window.alert("Aqui Você Pode entrar em Contato Comigo!");
 }
