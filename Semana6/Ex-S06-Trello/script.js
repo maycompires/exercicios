@@ -10,7 +10,7 @@ function solicitarNomeUsuario() {
         var elementoH2 = document.querySelector('h2');
 
         elementoH1.textContent = "Olá " + nomeUsuario;
-        elementoH2.textContent = "Seja bem-vindo!";
+        elementoH2.textContent = "Seja bem-vindo(a)!";
     }
 }
 

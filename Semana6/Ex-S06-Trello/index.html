@@ -1,47 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ex 6 - Criação de branch</title>
     <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav class="menu-navegacao">
-            <ul>
-                <li><a href="#home">Página Inicial</a></li>
-                <li><a href="#secao-sobre">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+      <nav class="menu-navegacao">
+        <ul>
+          <li><a href="#home">Página Inicial</a></li>
+          <li><a href="#secao-sobre">Sobre</a></li>
+          <li><a href="#formulario-contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
     <main id="home">
-        <div class="content-left">
-            <img src="./img/PhotoPerfil.png" alt="Foto-Perfil" class="img-perfil">
-        </div>
-        <div class="content-right">
-            <h1>Maycom Pires</h1>
-            <h2>Rumo ao Desenvolvimento Full Stack!</h2>
-            <button onclick="exibirMensagem()">Clique Aqui</button>
-        </div>
+      <div class="content-left">
+        <img src="./img/PhotoPerfil.png" alt="Foto-Perfil" class="img-perfil" />
+      </div>
+      <div class="content-right">
+        <h1>Maycom Pires</h1>
+        <h2>Rumo ao Desenvolvimento Full Stack!</h2>
+        <button onclick="exibirMensagem()">Clique Aqui</button>
+      </div>
     </main>
     <section id="secao-sobre">
-        <div class="first-card">
-            <p>Bem-vindo à minha jornada! Meu nome é <strong><em>&nbsp Maycom Pires</em></strong>, tenho <strong><em>&nbsp41 anos</em></strong> e estou embarcando na emocionante jornada de aprender desenvolvimento de software.</p>
-        </div>
-        <div class="second-card">
-            <p>Atualmente, estou cursando <strong><em>Análise e Desenvolvimento de Sistemas</em></strong> e <strong><em>Qualificação em Análise de Desenvolvimento Web [Curso Futuro-Dev]</em></strong>, buscando aprimorar minhas habilidades e conhecimentos na área.</p>
-        </div>
-        <div class="third-card">
-            <p>Meu objetivo é me tornar um <strong><em>Desenvolvedor Full Stack</em></strong>, capaz de criar soluções incríveis e inovadoras que impactam positivamente a vida das pessoas.</p>
-        </div>  
+    <div class="sobre-subtitulo">
+        <h2>Sobre Mim</h2>
+      </div>
     </section>
-    
+    <section>
+      <div class="first-card">
+        <p>
+          Bem-vindo à minha jornada! Meu nome é
+          <strong><em>&nbsp Maycom Pires</em></strong
+          >, tenho <strong><em>&nbsp41 anos</em></strong> e estou embarcando na
+          emocionante jornada de aprender desenvolvimento de software.
+        </p>
+      </div>
+      <div class="second-card">
+        <p>
+          Atualmente, estou cursando
+          <strong><em>Análise e Desenvolvimento de Sistemas</em></strong> e
+          <strong
+            ><em
+              >Qualificação em Análise de Desenvolvimento Web [Curso
+              Futuro-Dev]</em
+            ></strong
+          >, buscando aprimorar minhas habilidades e conhecimentos na área.
+        </p>
+      </div>
+      <div class="third-card">
+        <p>
+          Meu objetivo é me tornar um
+          <strong><em>Desenvolvedor Full Stack</em></strong
+          >, capaz de criar soluções incríveis e inovadoras que impactam
+          positivamente a vida das pessoas.
+        </p>
+      </div>
+    </section>
+
+    <section id="formulario-contato">
+      <h2>Formulário de Contato</h2>
+      <form action="/enviar" method="post">
+        <label for="nome">Nome:</label><br />
+        <input type="text" id="nome" name="nome" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem" name="mensagem"></textarea><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Maycom Pires | Todos os direitos reservados.</p>
-    </footer>    
-</body>
+      <p>&copy; 2024 Maycom Pires | Todos os direitos reservados.</p>
+    </footer>
+  </body>
 </html>
