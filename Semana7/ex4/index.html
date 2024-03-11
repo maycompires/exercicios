@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Construção Layout de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/g5.svg" alt="logo">
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>Create an account</h1>
+            <span>Setup a Free acoount to get access to unlimite courses</span>
+        </div>
+        <form>
+            <label for="full-name">Full name</label>
+                <input type="text" name="full-name" id="full-name" placeholder="Please enter the full name">
+            <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Please enter your username">
+            <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Please enter your e-mail">
+            <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="">
+            
+            <label for="number-phone">Number Phone</label>
+                <div class="number-contact"></div>
+                    <select id="codigo-pais" name="codigo-pais">
+                    <option value="+55">Brasil (+55)</option>
+                    <option value="+1">Estados Unidos (+1)</option>
+                    <option value="+44">Reino Unido (+44)</option>
+                    <option value="+54">Argentina (+54)</option>
+                    <option value="+33">França (+33)</option>
+                    <option value="+34">Espanha (+34)</option>
+                    </select>
+                    <input type="text" id="number-phone" name="number-phone" placeholder="Please enter your number phone" onfocus="trocarPlaceholder()" required>
+            </div>
+            <div class="container-login">
+                <button class="btn-signUp">Sign Up</button>
+                <span>Already have an account! <a href="#">Login</a></span>
+            </div>
+        </form>
+    </main>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
