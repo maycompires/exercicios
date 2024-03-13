@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="col1">
+                <span class="title">Sign In to this Session</span>
+                <span class="subtitle">If you don't have an account,</span>
+                <span class="subtitle">You can &nbsp<a href="#register">Register Here!</a></span>
+                <img src="./img/image-preview.png" alt="image-preview">
+        </div>
+        <div class="col2">
+            <form class="form-login">
+                <input required type="text" id="email" placeholder="Email address">
+                <input required type="password" id="password" placeholder="password" minlength="6" maxlength="20">
+
+                <a href="#">Forgot password?</a>
+                
+                <button class="btn-SignIn">Sign In</button>
+
+                <p class="middle-line"><em>or</em></p>
+            </form>
+        <div class="btn-redes-sociais">                      
+            <button class="btn-google">Continue with Google</button>
+            <button class="btn-facebook">Continue with Facebook</button>
+        </div>
+    </div>
+</body>
+</html>
