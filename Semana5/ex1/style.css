@@ -1,0 +1,60 @@
+body,html{
+  margin: 0;
+  padding:0;
+}
+
+
+.header-title{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  background: black;
+  color: white;
+  font-size: 28px;
+}
+
+.container{
+  background: gray;
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+label{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+input{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 260px;
+  height: 32px;
+}
+
+.btnConsultaCompra{
+  display: flex;
+  flex-direction : row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items :center;
+  width: 120px;
+  height: 32px;
+  background: limegreen;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px black;
+  color: white;
+  font-weight: 600;
+}
