@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <title>Loja Online</title>
+  <title>Mercado Online</title>
 </head>
 
 <body>
   <div class="header-title">
-    <h1>Loja Online</h1>
+    <img src="./assets/image1.svg" alt="logo-market">
+    <h1>Mercado Online</h1>
   </div>
   <div class="container">
     <form>
       <label for="codigoProduto">Código</label>
-      <input type="text" name="codigoProduto" id="codigoProduto" placeholder="Digite o Código do Produto"/>
+      <input required type="text" name="codigoProduto" id="codigoProduto" placeholder="Digite o Código do Produto"/>
       <label for="nomeProduto">Nome Produto</label>
-      <input type="text" name="nomeProduto" id="nomeProduto" placeholder="Digite o Nome do Produto"/>
+      <input required type="text" name="nomeProduto" id="nomeProduto" placeholder="Digite o Nome do Produto"/>
       <div class="btnConsultaCompra">
-      <button type="submit">Consultar Valor</button>
-      <button type="submit">Comprar</button>
+      <button id="btn-consultar" onclick="consultarValor()">Consultar Valor</button>
+      <button id="btn-comprar" onclick="comprarProduto()">Comprar</button>
       </div>
     </form>
   </div>
