@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Mercado Online</title>
+</head>
+
+<body>
+  <div class="header-title">
+    <img src="./assets/image1.svg" alt="logo-market">
+    <h1>Mercado Online</h1>
+  </div>
+  <div class="container">
+    <form>
+      <label for="codigoProduto">Código</label>
+      <input type="text" id="codigoProduto" onblur="exibirNomeProduto()" placeholder="Digite o Código do Produto"/>
+      <label for="nomeProduto">Nome Produto</label>
+      <input type="text" id="nomeProduto" placeholder="Digite o Nome do Produto"/>
+      <div class="btnConsultaCompra">
+      <button onclick="consultarValor()">Consultar Valor</button>
+      <button id="btn-Comprar" onclick="comprarProduto()">Comprar</button>
+      </div>
+    </form>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
