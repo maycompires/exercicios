@@ -16,12 +16,12 @@
   <div class="container">
     <form>
       <label for="codigoProduto">Código</label>
-      <input required type="text" name="codigoProduto" id="codigoProduto" placeholder="Digite o Código do Produto"/>
+      <input type="text" id="codigoProduto" onblur="exibirNomeProduto()" placeholder="Digite o Código do Produto"/>
       <label for="nomeProduto">Nome Produto</label>
-      <input required type="text" name="nomeProduto" id="nomeProduto" placeholder="Digite o Nome do Produto"/>
+      <input type="text" id="nomeProduto" placeholder="Digite o Nome do Produto"/>
       <div class="btnConsultaCompra">
-      <button id="btn-consultar" onclick="consultarValor()">Consultar Valor</button>
-      <button id="btn-comprar" onclick="comprarProduto()">Comprar</button>
+      <button onclick="consultarValor()">Consultar Valor</button>
+      <button onclick="comprarProduto()">Comprar</button>
       </div>
     </form>
   </div>
