@@ -8,3 +8,7 @@ let estiloClasse = document.querySelector('.minhaClasse');
 let elementoCriado = document.createElement('p');
     elementoCriado.appendChild(document.createTextNode('texto de p criado.'));
     container.appendChild(elementoCriado);
+
+let container = document.querySelector("#container");
+let p = document.querySelector("#container p");
+    container.removeChild(p);
