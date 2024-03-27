@@ -17,5 +17,5 @@ let meuElemento = document.getElementById("meuElemento");
 meuElemento.classList.add("novaClasse");
 console.log(meuElemento);*/
 
-let elementosClasses = document.querySelectorAll('.classeA');
+let elementosClasses = document.querySelectorAll('#container .classeA');
     elementosClasses.style.backgroundColor = 'yellow';
