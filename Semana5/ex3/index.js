@@ -48,3 +48,19 @@ function comprarProduto() {
     let produtoEncontrado = document.getElementById('nomeProduto').value;
     document.getElementById('btn-comprar').textContent = produtoEncontrado;
 }
+
+let carrinho = [];
+
+function comprarProduto() {
+  const nomeProduto = document.getElementById("nomeProduto").value;
+  
+  if (nomeProduto.trim() !== "") {
+    carrinho.push(nomeProduto);
+    
+    alert(`"${nomeProduto}" foi adicionado ao carrinho!`);
+    
+    document.getElementById("nomeProduto").value = "";
+  } else {
+    alert("Por favor, insira o nome do produto antes de comprar.");
+  }
+}
