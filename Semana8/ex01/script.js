@@ -24,7 +24,13 @@
 //             elementos[i].style.fontWeight = "normal";
 //         }
 
-const meuElemento = document.getElementById('meuId');
-    meuElemento.classList.remove('classe-a-remover');
+// const meuElemento = document.getElementById('meuId');
+//     meuElemento.classList.remove('classe-a-remover');
 
-    console.log(meuElemento)
+//     console.log(meuElemento)
+
+const meuElemento = document.getElementById('meuId');
+
+meuElemento.setAttribute('id', 'novoAtributo');
+
+console.log(meuElemento)
