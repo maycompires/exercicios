@@ -18,8 +18,14 @@
 // console.log(meuElemento)
 
 
-var elementos = document.getElementsByClassName("Classe-paragrafo");
-        for (var i = 0; i < elementos.length; i++) {
-            elementos[i].style.color = "blue";
-            elementos[i].style.fontWeight = "normal";
-        }
+// var elementos = document.getElementsByClassName("Classe-paragrafo");
+//         for (var i = 0; i < elementos.length; i++) {
+//             elementos[i].style.color = "blue";
+//             elementos[i].style.fontWeight = "normal";
+//         }
+
+const meuElemento = document.getElementById('meuId');
+
+    meuElemento.classList.add('nova-classe');
+
+    console.log(meuElemento)
