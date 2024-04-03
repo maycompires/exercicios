@@ -25,7 +25,6 @@
 //         }
 
 const meuElemento = document.getElementById('meuId');
-
-    meuElemento.classList.add('nova-classe');
+    meuElemento.classList.remove('classe-a-remover');
 
     console.log(meuElemento)
