@@ -29,8 +29,14 @@
 
 //     console.log(meuElemento)
 
-const meuElemento = document.getElementById('meuId');
+// const meuElemento = document.getElementById('meuId');
 
-meuElemento.setAttribute('id', 'novoAtributo');
+// meuElemento.setAttribute('id', 'novoAtributo');
 
-console.log(meuElemento)
+// console.log(meuElemento)
+
+const removeElemento = document.querySelector('#meuId');
+console.log(removeElemento);
+
+removeElemento.removeAttribute('id');
+
